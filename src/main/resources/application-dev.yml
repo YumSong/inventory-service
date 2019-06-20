@@ -2,3 +2,11 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka-server:8080/eureka/
+
+spring:
+  sleuth:
+    sampler:
+      probability: 1.0
+
+  zipkin:
+    base-url: http://zipkin.team-p.cloud.school.thoughtworks.cn
